@@ -2,6 +2,8 @@
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
+export PATH="$PATH:/opt/nvim-linux64/bin"
+
 # Source custom functions
 [[ ! -f "${ZDOTDIR}/.zshrc_functions" ]] || source "${ZDOTDIR}/.zshrc_functions"
 
