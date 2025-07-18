@@ -76,6 +76,12 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# nvm end
+
 # pnpm
 export PNPM_HOME="$HOME/.local/share/pnpm"
 case ":$PATH:" in
@@ -85,6 +91,6 @@ esac
 # pnpm end
 
 # Yandex cloud
-if [ -f '$HOME/yandex-cloud/path.bash.inc' ]; then source '$HOME/yandex-cloud/path.bash.inc'; fi
-if [ -f '$HOME/yandex-cloud/completion.bash.inc' ]; then source '$HOME/yandex-cloud/completion.bash.inc'; fi
+if [ -f "${HOME}/yandex-cloud/path.bash.inc" ]; then source "${HOME}/yandex-cloud/path.bash.inc"; fi
+if [ -f "${HOME}/yandex-cloud/completion.bash.inc" ]; then source "${HOME}/yandex-cloud/completion.bash.inc"; fi
 # Yandex cloud end
