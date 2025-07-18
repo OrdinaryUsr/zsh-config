@@ -1,0 +1,14 @@
+# Shell functions
+# This file contains custom shell functions
+
+# Load environment variables from .env file
+function activate_env()
+{
+    if [ ! -f .env ]; then
+        echo "Error: .env file not found in current directory"
+        return 1
+    fi
+    local var_count=$(cat .env | sed 's/#.*//g' | grep -v '^[[:space:]]*$' | wc -l)
+    export $(cat .env | sed 's/#.*//g' | xargs)
+    echo "Loaded $var_count environment variables from .env file"
+} 
