@@ -7,6 +7,9 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 # Source custom functions
 [[ ! -f "${ZDOTDIR}/.zshrc_functions" ]] || source "${ZDOTDIR}/.zshrc_functions"
 
+# Source aliases
+[[ ! -f "${ZDOTDIR}/.zshrc_aliases" ]] || source "${ZDOTDIR}/.zshrc_aliases"
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.

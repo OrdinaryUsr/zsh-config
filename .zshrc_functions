@@ -1,5 +1,4 @@
 # Shell functions
-# This file contains custom shell functions
 
 # Load environment variables from .env file
 function activate_env()

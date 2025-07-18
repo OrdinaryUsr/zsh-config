@@ -1,2 +1,5 @@
 # Dump
 .zcompdump
+
+# vim / neovim
+*.vim
